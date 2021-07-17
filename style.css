@@ -1,7 +1,22 @@
-.header{
-    display: flex;
-    align-content: center;
+body{
     text-align: center;
-    margin-left: 40%;
-    margin-right: 40%;
+    color: white;
+    font-size: 50px;  
+    font-size: x-large;
+}
+.header{
+    border: 1px, #222, solid;
+    border-radius: 15px;
+    background-color: #222;
+    margin-top: 20px;
+    padding: 5px;
+   
+}
+.btn{
+    border: 1px, #222, solid;
+    border-radius: 15px;
+    background-color: #222;
+    margin-top: 20px;
+    padding: 5px;
+   
 }
