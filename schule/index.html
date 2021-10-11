@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Firat@schule</title>
+     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+   </head>
+   <body>
+    <!DOCTYPE html>
+    <!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="UTF-8">
+        <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+        <link rel="stylesheet" href="style-bar.css">
+        <!-- Boxicons CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       </head>
+    <body>
+      <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bxl-c-plus-plus icon'></i>
+            <div class="logo_name">Powerkeks</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="./Rechner.html">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Rechner</span>
+            </a>
+             <span class="tooltip">Rechner</span>
+          </li>
+          <li>
+           <a href="#">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Empty</span>
+           </a>
+           <span class="tooltip">Empty</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Empty</span>
+           </a>
+           <span class="tooltip">Empty</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Empty</span>
+           </a>
+           <span class="tooltip">Empty</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Empty</span>
+           </a>
+           <span class="tooltip">Empty</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Empty</span>
+           </a>
+           <span class="tooltip">Empty</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Empty</span>
+           </a>
+           <span class="tooltip">Empty</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Empty</span>
+           </a>
+           <span class="tooltip">Empty</span>
+         </li>
+        </ul>
+      </div>
+      <section class="home-section">
+          <div class="text">
+              Willkommen auf meiner Seite  <br> Funktion in diesem Projekt : <br> 
+              <button onclick="window.location.href='Rechner.html';">Rechner</button>
+              Es Wurden in den Einzelen Datein so viele zeilen geschrieben <br>
+              info :  <br> Css : design  <br> 
+              html : text und buttons <br>
+              Rechner html : 91 Zeilen css : 156 Zeilen <br>
+              index html : 130 Zeilen css : 264 Zeilen <br>
+
+              
+          </div>
+      </section>
+      <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+    
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();//calling the function(optional)
+      });
+    
+      searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+    
+      // following are the code to change sidebar button(optional)
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+       }
+      }
+      </script> 
+   </body>
+
+
+
+</html>
